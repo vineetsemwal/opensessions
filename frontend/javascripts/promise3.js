@@ -8,7 +8,7 @@ function add(num1, num2) {
                 let result=num1+num2;
                 console.log("about to publish result");
                 resolve(result);
-            }, 5000);
+            }, 9000);
            
         }
     );
@@ -20,7 +20,7 @@ function useAdd() {
     let successHandler = result => {
         console.log("consuming result");
         console.log("result is ", result);
-    }
+    };
     let errHandler = err => {
         console.log("error is ", err);
     };

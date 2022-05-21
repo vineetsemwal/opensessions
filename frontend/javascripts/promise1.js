@@ -10,11 +10,11 @@ function add(num1, num2) {
 }
 
 function useAdd() {
-    let promise = add(2, undefined);
+    let promise = add(2, 3);
     let successHandler = result => {
         console.log("consuming result");
         console.log("result is ", result);
-    }
+    };
     let errHandler = err => {
         console.log("error is ", err);
     };
